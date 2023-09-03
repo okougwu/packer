@@ -1,15 +1,13 @@
 {
     "variables": {
-        "profile": "okougwu"
-        // "aws_access_key": "",
-        // "aws_secret_key": ""
+        "aws_access_key": "AKIATDDNF7ZATAHJFQ6C",
+        "aws_secret_key": "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"
     },
     "builders": [
         {
             "type": "amazon-ebs",
-            "profile": "okougwu",
-            // "access_key": "{{user `aws_access_key`}}",
-            // "secret_key": "{{user `aws_secret_key`}}",
+            "access_key": "{{user `aws_access_key`}}",
+            "secret_key": "{{user `aws_secret_key`}}",
             "region": "eu-west-2",
             "source_ami_filter": {
                 "filters": {
